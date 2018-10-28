@@ -1,0 +1,27 @@
+{
+  "author": {
+    "name": "Contributors",
+    "url": "https://github.com/kirkstrobeck/redirector/graphs/contributors"
+  },
+  "bugs": {
+    "url": "https://github.com/kirkstrobeck/redirector/issues"
+  },
+  "description": "Handle redirects with AWS API Gateway and Lambdas",
+  "devDependencies": {
+    "serverless": "^1.32.0"
+  },
+  "homepage": "https://github.com/kirkstrobeck/redirector",
+  "license": "Apache-2.0",
+  "name": "redirector",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kirkstrobeck/redirector.git"
+  },
+  "scripts": {
+    "invoke-local": "LOCAL=true serverless invoke local --function redirect --path test/payload.json",
+    "invoke": "serverless invoke --function redirect --path test/payload.json",
+    "logs": "serverless logs --function redirect --path test/payload.json",
+    "deploy": "serverless deploy"
+  },
+  "version": "0.0.1"
+}
