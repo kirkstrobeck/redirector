@@ -2,7 +2,7 @@
 service: redirector
 
 custom:
-  bucket: redirector-923798357 # change name
+  bucket: redirector-111222333 # change name
 
 provider:
   name: aws
